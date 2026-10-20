@@ -2,7 +2,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Tests: 49 Passed](https://img.shields.io/badge/tests-49%20passed-brightgreen.svg)]()
+[![Tests: 54 Passed](https://img.shields.io/badge/tests-54%20passed-brightgreen.svg)]()
 [![Status: Benchmark Frozen](https://img.shields.io/badge/benchmark-frozen%20(M1)-orange.svg)]()
 
 > **Audited Sports Analytics Benchmark for Live Basketball Tracking Data**  
@@ -144,7 +144,7 @@ pip install -e .
 ```powershell
 pytest -v
 ```
-*(49 unit and integration tests validate schema parsing, alignment, anti-leakage, directional mathematics, and nested calibration).*
+*(54 unit and integration tests validate schema parsing, alignment, anti-leakage, directional mathematics, nested calibration, and dashboard artifact integrity).*
 
 ### 4. Reproduce Phase 3A/3B Evaluation Pipeline
 ```powershell
@@ -154,6 +154,22 @@ Outputs generated in `reports/phase3a/`:
 - `phase3a_oof_predictions.csv`: 1,322 matched out-of-fold predictions.
 - `phase3a_metrics.json`: Complete machine-readable pooled, per-game, bootstrap, and sensitivity metrics.
 - `calibration_reliability.png`: High-resolution 10-bin calibration curves.
+
+### 5. Launch Interactive Research Dashboard (Judge Interface)
+CourtIQ includes a presentation and exploration dashboard built with Streamlit (`app/streamlit_app.py`):
+```powershell
+# 1. Install dashboard dependencies
+pip install -r requirements-dashboard.txt
+
+# 2. Launch Streamlit interface
+python -m streamlit run app/streamlit_app.py
+```
+The interface opens at `http://localhost:8501` and features 5 interactive modules:
+- **Page 1 — Executive Overview:** High-level problem framing, audited sequential dataset funnel (1,459 → 26 → 111 → 1,322), and M0 vs. M1 benchmark comparison cards.
+- **Page 2 — Shot Explorer & Kinematics:** Interactive tabular exploration of all 1,322 shot attempts with filters for game, outcome, tracking quality, defender distance, shooter speed, and model probability divergence. *(Note: 2D court coordinates are omitted from repository artifacts per data redistribution minimization standards; tabular kinematics are displayed without fabricating coordinates).*
+- **Page 3 — Model Lab & Evaluation:** Comprehensive benchmark comparison table (M0, M1, Speed Rel, Directional) and per-game held-out performance breakdown across all 10 matches.
+- **Page 4 — Calibration & Reliability:** Visual reliability diagrams, interactive ECE binning sensitivity ($K \in \{5, 10, 15, 20\}$), and deep-dive into the sharpness vs. calibration tradeoff.
+- **Page 5 — Research Audit & Methodology:** Documentation of the Leave-One-Game-Out protocol, 12 raw features / 29 design columns breakdown, tracking extrapolation impact, and research report previews.
 
 ---
 
