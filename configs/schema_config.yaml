@@ -1,0 +1,71 @@
+# CourtIQ Schema & Feature Configuration
+# Explicit mappings verified against SkillCorner opendata-basketball schema
+
+data_sources:
+  dynamic_events_filename_pattern: "{game_id}_dynamic_events.json"
+  tracking_filename_pattern: "{game_id}_tracking_data.jsonl.gz"
+  game_metadata_filename_pattern: "{game_id}_game_data.json"
+  event_family_key: "shots"
+
+keys:
+  shot_id: "id"
+  game_id: "gameId"
+  chance_id: "chanceId"
+  possession_id: "possessionId"
+  touch_id: "touchId"
+  shooter_id: "shooterId"
+  period: "period"
+  start_frame: "startFrame"
+  start_wall_clock: "startWallClock"
+  start_game_clock: "startGameClock"
+
+target:
+  name: "outcome"
+  type: "boolean"
+  positive_label: true
+  description: "Field goal success: True for scored/made basket, False for missed."
+
+filtering_rules:
+  # In FIBA box-score convention, missed shots where shooter was fouled award free throws
+  # and are excluded from official FGA.
+  exclude_fouled_misses: true
+  # Exclude shots where coordinates or distance are missing (camera out of frame/untracked)
+  require_valid_coordinates: true
+  # Tolerance in frames for tracking alignment validation
+  frame_alignment_tolerance: 0
+
+features:
+  # Pre-shot spatial & basic shot characteristics (M0 Baseline)
+  m0_numeric:
+    - "distance"
+    - "shotClock"
+    - "releaseTime"
+    - "dribblesBefore"
+  m0_categorical:
+    - "shotType"
+    - "three"
+    - "catchAndShoot"
+    - "createdFromPaint"
+    - "period"
+
+  # Pre-shot defensive context features (M1 Context Model)
+  m1_defensive_numeric:
+    - "closestDefDist"
+  m1_defensive_categorical:
+    - "contestLevel"
+    - "contested"
+
+  # Strict blacklist: Post-shot outcomes and target leakage variables (NEVER allow into features)
+  leakage_blacklist:
+    - "outcome"
+    - "shotQuality"      # Proprietary model output from SkillCorner
+    - "fouled"
+    - "foulId"
+    - "assisted"
+    - "assistOpp"
+    - "passerId"
+    - "blocked"
+    - "blockerId"
+    - "endFrame"
+    - "endWallClock"
+    - "endGameClock"

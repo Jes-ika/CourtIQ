@@ -1,0 +1,9 @@
+model_key,description,features_count,log_loss_uncal,delta_log_loss_vs_m1,brier_score_uncal,delta_brier_vs_m1,roc_auc_uncal,delta_roc_auc_vs_m1,ece_5_uncal,ece_10_uncal,ece_15_uncal,log_loss_platt_cal,brier_score_platt_cal,ece_10_platt_cal
+M0_baseline,Baseline: shot location and basic shot characteristics,9,0.655161,0.037891,0.231456,0.015515,0.641026,-0.053075,0.020006,0.030552,0.039626,0.655321,0.231519,0.032519
+M1_context,Release Context: M0 + static defender distance and contest level,12,0.61727,0.0,0.215942,0.0,0.6941,0.0,0.042527,0.051075,0.06849,0.618127,0.216403,0.05911
+M2_full,Full M2: M1 + closing velocity + contest angle + shooter velocity,15,0.618029,0.000759,0.216136,0.000194,0.694514,0.000414,0.049983,0.054431,0.060095,0.619022,0.216611,0.054531
+M2_ablation_closing_only,Ablation: M1 + defender closing velocity,13,0.617936,0.000666,0.216232,0.00029,0.693142,-0.000959,0.04346,0.05263,0.071315,0.618834,0.216705,0.06321
+M2_ablation_angle_only,Ablation: M1 + contest angle cosine,13,0.618061,0.000791,0.216251,0.000309,0.692864,-0.001236,0.041695,0.051436,0.068859,0.618994,0.216731,0.063636
+M2_ablation_shooter_vel_only,Ablation: M1 + shooter velocity magnitude,13,0.616512,-0.000758,0.215511,-0.00043,0.696695,0.002595,0.040302,0.044691,0.061054,0.617366,0.215943,0.051371
+M2_ablation_closing_angle,Ablation: M1 + closing velocity + contest angle,14,0.618728,0.001458,0.216539,0.000597,0.691864,-0.002236,0.043707,0.049572,0.068373,0.619701,0.21703,0.063719
+M2_ablation_delta_dist,Alternative M2: M1 + distance delta + contest angle + shooter velocity,15,0.618029,0.000759,0.216136,0.000194,0.694514,0.000414,0.049983,0.054431,0.060095,0.619022,0.216611,0.054531

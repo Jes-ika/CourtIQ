@@ -1,0 +1,1461 @@
+{
+  "n_games": 10,
+  "n_total_shots": 1322,
+  "games_list": [
+    "114086",
+    "114099",
+    "114169",
+    "114234",
+    "114243",
+    "178442",
+    "179612",
+    "184439",
+    "188630",
+    "191313"
+  ],
+  "pooled_raw_metrics": {
+    "M1_benchmark": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.4510155792580501,
+      "log_loss": 0.6172697150797337,
+      "brier_score": 0.21594180838762073,
+      "roc_auc": 0.6941003869924336,
+      "ece": 0.04252708479824424,
+      "ece_5": 0.04252708479824424,
+      "ece_10": 0.0510747577547229,
+      "ece_15": 0.06848973899644094
+    },
+    "M1_plus_speed_rel": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.45079202974627114,
+      "log_loss": 0.6165117281977915,
+      "brier_score": 0.21551134058142585,
+      "roc_auc": 0.6966949690983655,
+      "ece": 0.04030212329176109,
+      "ece_5": 0.04030212329176109,
+      "ece_10": 0.04469094598435183,
+      "ece_15": 0.06105435976090956
+    },
+    "M1_plus_speed_early": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.45076732694402116,
+      "log_loss": 0.6171785297846516,
+      "brier_score": 0.21585005794367113,
+      "roc_auc": 0.694897475885173,
+      "ece": 0.038236357020399035,
+      "ece_5": 0.038236357020399035,
+      "ece_10": 0.04461659620662793,
+      "ece_15": 0.06447750545984339
+    },
+    "M1_plus_directional": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.45060126340844936,
+      "log_loss": 0.6183499039902295,
+      "brier_score": 0.2164032525741701,
+      "roc_auc": 0.6925454860509443,
+      "ece": 0.04200398611636727,
+      "ece_5": 0.04200398611636727,
+      "ece_10": 0.05083631694098973,
+      "ece_15": 0.07174750763109984
+    },
+    "M1_plus_radial_only": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.4508233888246967,
+      "log_loss": 0.617787531964472,
+      "brier_score": 0.2161602768658256,
+      "roc_auc": 0.69313001790562,
+      "ece": 0.03998001023000178,
+      "ece_5": 0.03998001023000178,
+      "ece_10": 0.04972446339489499,
+      "ece_15": 0.07281719357751337
+    },
+    "M1_plus_tangential_only": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.45077702514622625,
+      "log_loss": 0.6178859012746032,
+      "brier_score": 0.21620070953761966,
+      "roc_auc": 0.6934465430601282,
+      "ece": 0.04334995373653433,
+      "ece_5": 0.04334995373653433,
+      "ece_10": 0.05029073059301832,
+      "ece_15": 0.0661272592799794
+    }
+  },
+  "pooled_calibrated_metrics": {
+    "M1_benchmark": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.451727776912546,
+      "log_loss": 0.6171257481392997,
+      "brier_score": 0.21569595804496644,
+      "roc_auc": 0.6938462427077918,
+      "ece": 0.03788788869147833,
+      "ece_5": 0.03788788869147833,
+      "ece_10": 0.044584756697868065,
+      "ece_15": 0.05993199659247413
+    },
+    "M1_plus_speed_rel": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.45164903223732866,
+      "log_loss": 0.6163458771895378,
+      "brier_score": 0.21528052448426882,
+      "roc_auc": 0.6963715127360942,
+      "ece": 0.04234893551646233,
+      "ece_5": 0.04234893551646233,
+      "ece_10": 0.04587127322552468,
+      "ece_15": 0.051670256721221115
+    },
+    "M1_plus_speed_early": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.4517275144863611,
+      "log_loss": 0.6170100935666036,
+      "brier_score": 0.2156047268495704,
+      "roc_auc": 0.694698781262635,
+      "ece": 0.036424963875265996,
+      "ece_5": 0.036424963875265996,
+      "ece_10": 0.04116305313826579,
+      "ece_15": 0.054987667639863326
+    },
+    "M1_plus_directional": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.4517092663643018,
+      "log_loss": 0.6181150282487575,
+      "brier_score": 0.21610655487632324,
+      "roc_auc": 0.69236296424652,
+      "ece": 0.04929505550869433,
+      "ece_5": 0.04929505550869433,
+      "ece_10": 0.05038838132845328,
+      "ece_15": 0.05629936319419346
+    },
+    "M1_plus_radial_only": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.4517304415579822,
+      "log_loss": 0.617614191851462,
+      "brier_score": 0.2158972169522253,
+      "roc_auc": 0.6928943568416797,
+      "ece": 0.04434011126373767,
+      "ece_5": 0.04434011126373767,
+      "ece_10": 0.04624755124788447,
+      "ece_15": 0.057591182602398934
+    },
+    "M1_plus_tangential_only": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.45167506022209297,
+      "log_loss": 0.6176855322366136,
+      "brier_score": 0.21592251127319856,
+      "roc_auc": 0.693229365216889,
+      "ece": 0.03866186947584542,
+      "ece_5": 0.03866186947584542,
+      "ece_10": 0.042363701013008036,
+      "ece_15": 0.057261645113412925
+    }
+  },
+  "bootstrap_results": {
+    "M1_plus_speed_rel": {
+      "delta_log_loss": {
+        "mean": -0.0007242045079793047,
+        "std": 0.000766098988862216,
+        "ci_95": [
+          -0.0021767028471134987,
+          0.0008536296885303594
+        ]
+      },
+      "delta_brier": {
+        "mean": -0.00041546882406082663,
+        "std": 0.0003425817678611547,
+        "ci_95": [
+          -0.0010856004530117292,
+          0.00026446670748245244
+        ]
+      },
+      "delta_roc_auc": {
+        "mean": 0.002650561085532278,
+        "ci_95": [
+          0.0004308619491502685,
+          0.004706540005567702
+        ]
+      }
+    },
+    "M1_plus_speed_early": {
+      "delta_log_loss": {
+        "mean": -0.00010218003887777566,
+        "std": 0.0005197931442921728,
+        "ci_95": [
+          -0.001135615761073533,
+          0.0009008533483452845
+        ]
+      },
+      "delta_brier": {
+        "mean": -9.862829322021333e-05,
+        "std": 0.00023993518609565358,
+        "ci_95": [
+          -0.0005574275257156965,
+          0.00037238549031459305
+        ]
+      },
+      "delta_roc_auc": {
+        "mean": 0.0009442569472613948,
+        "ci_95": [
+          -0.001022815869645577,
+          0.002538468037175671
+        ]
+      }
+    },
+    "M1_plus_directional": {
+      "delta_log_loss": {
+        "mean": 0.0010926274864526268,
+        "std": 0.0005339265979458604,
+        "ci_95": [
+          0.00021070951620559832,
+          0.0022381422374200986
+        ]
+      },
+      "delta_brier": {
+        "mean": 0.0004667485302825235,
+        "std": 0.00022397899946389197,
+        "ci_95": [
+          0.00010807753531690557,
+          0.0009513216916167591
+        ]
+      },
+      "delta_roc_auc": {
+        "mean": -0.0015441350692022798,
+        "ci_95": [
+          -0.0030997880070558425,
+          -0.00035331023470545073
+        ]
+      }
+    },
+    "M1_plus_radial_only": {
+      "delta_log_loss": {
+        "mean": 0.0005251928254139836,
+        "std": 0.00034064508664338094,
+        "ci_95": [
+          -7.207179738463465e-05,
+          0.0012461159005754952
+        ]
+      },
+      "delta_brier": {
+        "mean": 0.00022135964898725073,
+        "std": 0.00014460734661074612,
+        "ci_95": [
+          -3.1268801669396414e-05,
+          0.0005325406972855023
+        ]
+      },
+      "delta_roc_auc": {
+        "mean": -0.0010533707222630106,
+        "ci_95": [
+          -0.0020020599318836705,
+          -0.00035169046942953977
+        ]
+      }
+    },
+    "M1_plus_tangential_only": {
+      "delta_log_loss": {
+        "mean": 0.0006176879431165174,
+        "std": 0.0002512445558386228,
+        "ci_95": [
+          0.00024958445924705696,
+          0.0011773528026306017
+        ]
+      },
+      "delta_brier": {
+        "mean": 0.0002592662974272645,
+        "std": 0.00010617981965161833,
+        "ci_95": [
+          0.00011016913600500195,
+          0.0004992326870223306
+        ]
+      },
+      "delta_roc_auc": {
+        "mean": -0.000594357983845213,
+        "ci_95": [
+          -0.0014178241350932819,
+          0.00022838038781474408
+        ]
+      }
+    }
+  },
+  "per_game_summary": {
+    "M1_plus_speed_rel": [
+      {
+        "game_id": "114086",
+        "n_shots": 122,
+        "m1_log_loss": 0.6599660356400598,
+        "cand_log_loss": 0.6590990253373682,
+        "delta_log_loss": -0.0008670103026916509,
+        "improves_log_loss": true,
+        "delta_brier": -0.000578476421691565,
+        "improves_brier": true,
+        "delta_auc": -0.003225806451612967,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114099",
+        "n_shots": 140,
+        "m1_log_loss": 0.6033726726602489,
+        "cand_log_loss": 0.6045947975528394,
+        "delta_log_loss": 0.0012221248925905481,
+        "improves_log_loss": false,
+        "delta_brier": 0.0003366328194475965,
+        "improves_brier": false,
+        "delta_auc": 0.0030362177401866974,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114169",
+        "n_shots": 138,
+        "m1_log_loss": 0.5846752125769893,
+        "cand_log_loss": 0.588445812486294,
+        "delta_log_loss": 0.003770599909304728,
+        "improves_log_loss": false,
+        "delta_brier": 0.0017500874653653964,
+        "improves_brier": false,
+        "delta_auc": -0.0035516093229744916,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114234",
+        "n_shots": 125,
+        "m1_log_loss": 0.6189963251959839,
+        "cand_log_loss": 0.6208821452101797,
+        "delta_log_loss": 0.0018858200141957937,
+        "improves_log_loss": false,
+        "delta_brier": 0.000384339084397084,
+        "improves_brier": false,
+        "delta_auc": 0.004365690806368838,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114243",
+        "n_shots": 144,
+        "m1_log_loss": 0.5980381671792347,
+        "cand_log_loss": 0.5956003961669323,
+        "delta_log_loss": -0.00243777101230247,
+        "improves_log_loss": true,
+        "delta_brier": -0.0007052889429828291,
+        "improves_brier": true,
+        "delta_auc": 0.008580183861082724,
+        "improves_auc": true
+      },
+      {
+        "game_id": "178442",
+        "n_shots": 145,
+        "m1_log_loss": 0.623516743292085,
+        "cand_log_loss": 0.6227176035140268,
+        "delta_log_loss": -0.0007991397780581222,
+        "improves_log_loss": true,
+        "delta_brier": -0.00014542602812975258,
+        "improves_brier": true,
+        "delta_auc": 0.005136986301369828,
+        "improves_auc": true
+      },
+      {
+        "game_id": "179612",
+        "n_shots": 134,
+        "m1_log_loss": 0.6098271816491402,
+        "cand_log_loss": 0.606594603065273,
+        "delta_log_loss": -0.003232578583867163,
+        "improves_log_loss": true,
+        "delta_brier": -0.0015657148809389565,
+        "improves_brier": true,
+        "delta_auc": 0.007824726134585291,
+        "improves_auc": true
+      },
+      {
+        "game_id": "184439",
+        "n_shots": 130,
+        "m1_log_loss": 0.6118087657842548,
+        "cand_log_loss": 0.6116139012686158,
+        "delta_log_loss": -0.00019486451563899276,
+        "improves_log_loss": true,
+        "delta_brier": -0.0003953697179925608,
+        "improves_brier": true,
+        "delta_auc": 0.0014285714285714457,
+        "improves_auc": true
+      },
+      {
+        "game_id": "188630",
+        "n_shots": 114,
+        "m1_log_loss": 0.6022836434907128,
+        "cand_log_loss": 0.5969029170932073,
+        "delta_log_loss": -0.005380726397505531,
+        "improves_log_loss": true,
+        "delta_brier": -0.0026287663054242183,
+        "improves_brier": true,
+        "delta_auc": 0.008950617283950524,
+        "improves_auc": true
+      },
+      {
+        "game_id": "191313",
+        "n_shots": 130,
+        "m1_log_loss": 0.6657159363670928,
+        "cand_log_loss": 0.6635264274821431,
+        "delta_log_loss": -0.0021895088849497313,
+        "improves_log_loss": true,
+        "delta_brier": -0.0011665828366488051,
+        "improves_brier": true,
+        "delta_auc": 0.0014204545454544748,
+        "improves_auc": true
+      }
+    ],
+    "M1_plus_speed_early": [
+      {
+        "game_id": "114086",
+        "n_shots": 122,
+        "m1_log_loss": 0.6599660356400598,
+        "cand_log_loss": 0.6597582937465694,
+        "delta_log_loss": -0.00020774189349048733,
+        "improves_log_loss": true,
+        "delta_brier": -0.00022051840839595882,
+        "improves_brier": true,
+        "delta_auc": -0.0024193548387096975,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114099",
+        "n_shots": 140,
+        "m1_log_loss": 0.6033726726602489,
+        "cand_log_loss": 0.6053196451861866,
+        "delta_log_loss": 0.0019469725259377846,
+        "improves_log_loss": false,
+        "delta_brier": 0.0006555203114881891,
+        "improves_brier": false,
+        "delta_auc": 0.0030362177401866974,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114169",
+        "n_shots": 138,
+        "m1_log_loss": 0.5846752125769893,
+        "cand_log_loss": 0.586875646685208,
+        "delta_log_loss": 0.002200434108218685,
+        "improves_log_loss": false,
+        "delta_brier": 0.0010115055606421952,
+        "improves_brier": false,
+        "delta_auc": -0.0017758046614871903,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114234",
+        "n_shots": 125,
+        "m1_log_loss": 0.6189963251959839,
+        "cand_log_loss": 0.6195000696368855,
+        "delta_log_loss": 0.0005037444409016212,
+        "improves_log_loss": false,
+        "delta_brier": -2.6341789506861835e-05,
+        "improves_brier": true,
+        "delta_auc": 0.004879301489471133,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114243",
+        "n_shots": 144,
+        "m1_log_loss": 0.5980381671792347,
+        "cand_log_loss": 0.596155962885608,
+        "delta_log_loss": -0.0018822042936267325,
+        "improves_log_loss": true,
+        "delta_brier": -0.0006184099058913206,
+        "improves_brier": true,
+        "delta_auc": 0.0010214504596526286,
+        "improves_auc": true
+      },
+      {
+        "game_id": "178442",
+        "n_shots": 145,
+        "m1_log_loss": 0.623516743292085,
+        "cand_log_loss": 0.6249342079795367,
+        "delta_log_loss": 0.0014174646874517416,
+        "improves_log_loss": false,
+        "delta_brier": 0.0009756828723898048,
+        "improves_brier": false,
+        "delta_auc": 0.0,
+        "improves_auc": false
+      },
+      {
+        "game_id": "179612",
+        "n_shots": 134,
+        "m1_log_loss": 0.6098271816491402,
+        "cand_log_loss": 0.607910961680479,
+        "delta_log_loss": -0.0019162199686612036,
+        "improves_log_loss": true,
+        "delta_brier": -0.0008832393228425661,
+        "improves_brier": true,
+        "delta_auc": 0.004471272076905786,
+        "improves_auc": true
+      },
+      {
+        "game_id": "184439",
+        "n_shots": 130,
+        "m1_log_loss": 0.6118087657842548,
+        "cand_log_loss": 0.6120241879774699,
+        "delta_log_loss": 0.00021542219321513123,
+        "improves_log_loss": false,
+        "delta_brier": -0.00014168102846850994,
+        "improves_brier": true,
+        "delta_auc": 0.0007142857142856673,
+        "improves_auc": true
+      },
+      {
+        "game_id": "188630",
+        "n_shots": 114,
+        "m1_log_loss": 0.6022836434907128,
+        "cand_log_loss": 0.59976747312894,
+        "delta_log_loss": -0.0025161703617728737,
+        "improves_log_loss": true,
+        "delta_brier": -0.0012207536424265752,
+        "improves_brier": true,
+        "delta_auc": 0.005555555555555536,
+        "improves_auc": true
+      },
+      {
+        "game_id": "191313",
+        "n_shots": 130,
+        "m1_log_loss": 0.6657159363670928,
+        "cand_log_loss": 0.6645367862575199,
+        "delta_log_loss": -0.001179150109572924,
+        "improves_log_loss": true,
+        "delta_brier": -0.0007611015401177701,
+        "improves_brier": true,
+        "delta_auc": 0.0040246212121212155,
+        "improves_auc": true
+      }
+    ],
+    "M1_plus_directional": [
+      {
+        "game_id": "114086",
+        "n_shots": 122,
+        "m1_log_loss": 0.6599660356400598,
+        "cand_log_loss": 0.6599996173451103,
+        "delta_log_loss": 3.358170505041169e-05,
+        "improves_log_loss": false,
+        "delta_brier": 7.298567975527748e-05,
+        "improves_brier": false,
+        "delta_auc": -0.0026881720430107503,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114099",
+        "n_shots": 140,
+        "m1_log_loss": 0.6033726726602489,
+        "cand_log_loss": 0.60388082659861,
+        "delta_log_loss": 0.0005081539383611222,
+        "improves_log_loss": false,
+        "delta_brier": 0.00020399653735039824,
+        "improves_brier": false,
+        "delta_auc": 0.000867490782910707,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114169",
+        "n_shots": 138,
+        "m1_log_loss": 0.5846752125769893,
+        "cand_log_loss": 0.5848481270893598,
+        "delta_log_loss": 0.00017291451237055888,
+        "improves_log_loss": false,
+        "delta_brier": 6.66891328710284e-05,
+        "improves_brier": false,
+        "delta_auc": 0.0006659267480577657,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114234",
+        "n_shots": 125,
+        "m1_log_loss": 0.6189963251959839,
+        "cand_log_loss": 0.6205907671010031,
+        "delta_log_loss": 0.0015944419050192282,
+        "improves_log_loss": false,
+        "delta_brier": 0.000623738354126685,
+        "improves_brier": false,
+        "delta_auc": 0.0002568053415511473,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114243",
+        "n_shots": 144,
+        "m1_log_loss": 0.5980381671792347,
+        "cand_log_loss": 0.5981882026923002,
+        "delta_log_loss": 0.0001500355130654718,
+        "improves_log_loss": false,
+        "delta_brier": 9.929813374690011e-05,
+        "improves_brier": false,
+        "delta_auc": -0.0012257405515833097,
+        "improves_auc": false
+      },
+      {
+        "game_id": "178442",
+        "n_shots": 145,
+        "m1_log_loss": 0.623516743292085,
+        "cand_log_loss": 0.6239404027958296,
+        "delta_log_loss": 0.00042365950374467776,
+        "improves_log_loss": false,
+        "delta_brier": 0.00022619761290623708,
+        "improves_brier": false,
+        "delta_auc": -0.0011415525114155667,
+        "improves_auc": false
+      },
+      {
+        "game_id": "179612",
+        "n_shots": 134,
+        "m1_log_loss": 0.6098271816491402,
+        "cand_log_loss": 0.6152183461076204,
+        "delta_log_loss": 0.005391164458480202,
+        "improves_log_loss": false,
+        "delta_brier": 0.0023391441754159747,
+        "improves_brier": false,
+        "delta_auc": -0.005589090096132399,
+        "improves_auc": false
+      },
+      {
+        "game_id": "184439",
+        "n_shots": 130,
+        "m1_log_loss": 0.6118087657842548,
+        "cand_log_loss": 0.6145339366017624,
+        "delta_log_loss": 0.0027251708175075606,
+        "improves_log_loss": false,
+        "delta_brier": 0.0010082262793878194,
+        "improves_brier": false,
+        "delta_auc": -0.005238095238095264,
+        "improves_auc": false
+      },
+      {
+        "game_id": "188630",
+        "n_shots": 114,
+        "m1_log_loss": 0.6022836434907128,
+        "cand_log_loss": 0.6023110667848407,
+        "delta_log_loss": 2.74232941278596e-05,
+        "improves_log_loss": false,
+        "delta_brier": 3.0370493282999567e-05,
+        "improves_brier": false,
+        "delta_auc": -0.0006172839506173311,
+        "improves_auc": false
+      },
+      {
+        "game_id": "191313",
+        "n_shots": 130,
+        "m1_log_loss": 0.6657159363670928,
+        "cand_log_loss": 0.6654601943539145,
+        "delta_log_loss": -0.00025574201317835055,
+        "improves_log_loss": true,
+        "delta_brier": -7.445773334036065e-05,
+        "improves_brier": true,
+        "delta_auc": 0.0018939393939394478,
+        "improves_auc": true
+      }
+    ],
+    "M1_plus_radial_only": [
+      {
+        "game_id": "114086",
+        "n_shots": 122,
+        "m1_log_loss": 0.6599660356400598,
+        "cand_log_loss": 0.6597908463669933,
+        "delta_log_loss": -0.00017518927306658938,
+        "improves_log_loss": true,
+        "delta_brier": -4.5307223641433136e-05,
+        "improves_brier": true,
+        "delta_auc": -0.0013440860215053752,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114099",
+        "n_shots": 140,
+        "m1_log_loss": 0.6033726726602489,
+        "cand_log_loss": 0.6029888754009933,
+        "delta_log_loss": -0.000383797259255525,
+        "improves_log_loss": true,
+        "delta_brier": -0.00011951894583200895,
+        "improves_brier": true,
+        "delta_auc": -0.0010843634786378287,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114169",
+        "n_shots": 138,
+        "m1_log_loss": 0.5846752125769893,
+        "cand_log_loss": 0.5842262365647541,
+        "delta_log_loss": -0.00044897601223514716,
+        "improves_log_loss": true,
+        "delta_brier": -0.00027350724929434134,
+        "improves_brier": true,
+        "delta_auc": -0.0008879023307435396,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114234",
+        "n_shots": 125,
+        "m1_log_loss": 0.6189963251959839,
+        "cand_log_loss": 0.6201867667798301,
+        "delta_log_loss": 0.0011904415838461802,
+        "improves_log_loss": false,
+        "delta_brier": 0.0004835665776199982,
+        "improves_brier": false,
+        "delta_auc": -0.0020544427324087344,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114243",
+        "n_shots": 144,
+        "m1_log_loss": 0.5980381671792347,
+        "cand_log_loss": 0.5983389526522297,
+        "delta_log_loss": 0.0003007854729949466,
+        "improves_log_loss": false,
+        "delta_brier": 0.00013441063967828404,
+        "improves_brier": false,
+        "delta_auc": -0.001634320735444339,
+        "improves_auc": false
+      },
+      {
+        "game_id": "178442",
+        "n_shots": 145,
+        "m1_log_loss": 0.623516743292085,
+        "cand_log_loss": 0.6239832472832363,
+        "delta_log_loss": 0.0004665039911513347,
+        "improves_log_loss": false,
+        "delta_brier": 0.00024435503767300526,
+        "improves_brier": false,
+        "delta_auc": -0.0013318112633181611,
+        "improves_auc": false
+      },
+      {
+        "game_id": "179612",
+        "n_shots": 134,
+        "m1_log_loss": 0.6098271816491402,
+        "cand_log_loss": 0.6127431786513993,
+        "delta_log_loss": 0.0029159970022590853,
+        "improves_log_loss": false,
+        "delta_brier": 0.0012680603775387378,
+        "improves_brier": false,
+        "delta_auc": -0.004024144869215318,
+        "improves_auc": false
+      },
+      {
+        "game_id": "184439",
+        "n_shots": 130,
+        "m1_log_loss": 0.6118087657842548,
+        "cand_log_loss": 0.6137512048251265,
+        "delta_log_loss": 0.0019424390408716574,
+        "improves_log_loss": false,
+        "delta_brier": 0.0007703971052380465,
+        "improves_brier": false,
+        "delta_auc": -0.004761904761904745,
+        "improves_auc": false
+      },
+      {
+        "game_id": "188630",
+        "n_shots": 114,
+        "m1_log_loss": 0.6022836434907128,
+        "cand_log_loss": 0.6020273968315294,
+        "delta_log_loss": -0.0002562466591834456,
+        "improves_log_loss": true,
+        "delta_brier": -0.00014168575951231666,
+        "improves_brier": true,
+        "delta_auc": -0.00030864197530866555,
+        "improves_auc": false
+      },
+      {
+        "game_id": "191313",
+        "n_shots": 130,
+        "m1_log_loss": 0.6657159363670928,
+        "cand_log_loss": 0.665314454672048,
+        "delta_log_loss": -0.00040148169504483633,
+        "improves_log_loss": true,
+        "delta_brier": -0.0001564039244246751,
+        "improves_brier": true,
+        "delta_auc": 0.00047348484848486194,
+        "improves_auc": true
+      }
+    ],
+    "M1_plus_tangential_only": [
+      {
+        "game_id": "114086",
+        "n_shots": 122,
+        "m1_log_loss": 0.6599660356400598,
+        "cand_log_loss": 0.6603000220495442,
+        "delta_log_loss": 0.00033398640948434366,
+        "improves_log_loss": false,
+        "delta_brier": 0.00015603528292337798,
+        "improves_brier": false,
+        "delta_auc": -0.0010752688172043223,
+        "improves_auc": false
+      },
+      {
+        "game_id": "114099",
+        "n_shots": 140,
+        "m1_log_loss": 0.6033726726602489,
+        "cand_log_loss": 0.604139890197005,
+        "delta_log_loss": 0.0007672175367561263,
+        "improves_log_loss": false,
+        "delta_brier": 0.0002510971761915948,
+        "improves_brier": false,
+        "delta_auc": 2.220446049250313e-16,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114169",
+        "n_shots": 138,
+        "m1_log_loss": 0.5846752125769893,
+        "cand_log_loss": 0.5851140101217907,
+        "delta_log_loss": 0.00043879754480136146,
+        "improves_log_loss": false,
+        "delta_brier": 0.00024276161632585946,
+        "improves_brier": false,
+        "delta_auc": 0.0008879023307436507,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114234",
+        "n_shots": 125,
+        "m1_log_loss": 0.6189963251959839,
+        "cand_log_loss": 0.6193399469947389,
+        "delta_log_loss": 0.00034362179875502274,
+        "improves_log_loss": false,
+        "delta_brier": 0.00012920775728625378,
+        "improves_brier": false,
+        "delta_auc": 0.0038520801232666546,
+        "improves_auc": true
+      },
+      {
+        "game_id": "114243",
+        "n_shots": 144,
+        "m1_log_loss": 0.5980381671792347,
+        "cand_log_loss": 0.5979036189270146,
+        "delta_log_loss": -0.00013454825222014577,
+        "improves_log_loss": true,
+        "delta_brier": -2.2776219455233893e-05,
+        "improves_brier": true,
+        "delta_auc": 0.00040858018386102923,
+        "improves_auc": true
+      },
+      {
+        "game_id": "178442",
+        "n_shots": 145,
+        "m1_log_loss": 0.623516743292085,
+        "cand_log_loss": 0.6236767724249911,
+        "delta_log_loss": 0.00016002913290613652,
+        "improves_log_loss": false,
+        "delta_brier": 7.279715387914498e-05,
+        "improves_brier": false,
+        "delta_auc": -0.0007610350076103778,
+        "improves_auc": false
+      },
+      {
+        "game_id": "179612",
+        "n_shots": 134,
+        "m1_log_loss": 0.6098271816491402,
+        "cand_log_loss": 0.6126328962858943,
+        "delta_log_loss": 0.002805714636754164,
+        "improves_log_loss": false,
+        "delta_brier": 0.0012054298075065695,
+        "improves_brier": false,
+        "delta_auc": -0.002012072434607659,
+        "improves_auc": false
+      },
+      {
+        "game_id": "184439",
+        "n_shots": 130,
+        "m1_log_loss": 0.6118087657842548,
+        "cand_log_loss": 0.6125093919560195,
+        "delta_log_loss": 0.0007006261717646955,
+        "improves_log_loss": false,
+        "delta_brier": 0.00021950901058787053,
+        "improves_brier": false,
+        "delta_auc": -0.0011904761904760752,
+        "improves_auc": false
+      },
+      {
+        "game_id": "188630",
+        "n_shots": 114,
+        "m1_log_loss": 0.6022836434907128,
+        "cand_log_loss": 0.6028607868047947,
+        "delta_log_loss": 0.0005771433140818738,
+        "improves_log_loss": false,
+        "delta_brier": 0.0002608197097541398,
+        "improves_brier": false,
+        "delta_auc": -0.0009259259259259967,
+        "improves_auc": false
+      },
+      {
+        "game_id": "191313",
+        "n_shots": 130,
+        "m1_log_loss": 0.6657159363670928,
+        "cand_log_loss": 0.665917965513831,
+        "delta_log_loss": 0.00020202914673816963,
+        "improves_log_loss": false,
+        "delta_brier": 8.732549381726407e-05,
+        "improves_brier": false,
+        "delta_auc": 0.0,
+        "improves_auc": false
+      }
+    ]
+  },
+  "calibration_provenance": [
+    {
+      "outer_fold": 1,
+      "test_game": "114086",
+      "n_train_shots": 1200,
+      "n_test_shots": 122,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.9228411964539747,
+          "calibrator_intercept": -0.010694882937523591,
+          "inner_oof_log_loss": 0.6132833638778366
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.9210916130013145,
+          "calibrator_intercept": -0.009945738180752747,
+          "inner_oof_log_loss": 0.6126624301972186
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.9192722235152697,
+          "calibrator_intercept": -0.009591114029375633,
+          "inner_oof_log_loss": 0.6132025605900585
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.9125009328959481,
+          "calibrator_intercept": -0.010559145628393482,
+          "inner_oof_log_loss": 0.6145847520232265
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.9189928419541943,
+          "calibrator_intercept": -0.010358405560896967,
+          "inner_oof_log_loss": 0.6139046129913811
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.9168941123929911,
+          "calibrator_intercept": -0.01071646165653383,
+          "inner_oof_log_loss": 0.6139407391566403
+        }
+      }
+    },
+    {
+      "outer_fold": 2,
+      "test_game": "114099",
+      "n_train_shots": 1182,
+      "n_test_shots": 140,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.910966947757742,
+          "calibrator_intercept": -0.007937602239227655,
+          "inner_oof_log_loss": 0.6200890235384414
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.9098841299189042,
+          "calibrator_intercept": -0.007497120269414825,
+          "inner_oof_log_loss": 0.6191219333810901
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.9083250213589597,
+          "calibrator_intercept": -0.006832907907671267,
+          "inner_oof_log_loss": 0.6196743440476719
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.9001956376737109,
+          "calibrator_intercept": -0.007944797193864992,
+          "inner_oof_log_loss": 0.6213854714186873
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.906520759547081,
+          "calibrator_intercept": -0.00789410699652603,
+          "inner_oof_log_loss": 0.6206957880479574
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.9052267285684207,
+          "calibrator_intercept": -0.008018887889120684,
+          "inner_oof_log_loss": 0.6206523913222648
+        }
+      }
+    },
+    {
+      "outer_fold": 3,
+      "test_game": "114169",
+      "n_train_shots": 1184,
+      "n_test_shots": 138,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.9028687066795722,
+          "calibrator_intercept": -0.00957363510141298,
+          "inner_oof_log_loss": 0.6227914984227219
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.9020298914025288,
+          "calibrator_intercept": -0.00966269717244528,
+          "inner_oof_log_loss": 0.6214558927214763
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.8993731832459397,
+          "calibrator_intercept": -0.009522211682213738,
+          "inner_oof_log_loss": 0.6224259352196065
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.8914035213680128,
+          "calibrator_intercept": -0.009837444736802018,
+          "inner_oof_log_loss": 0.6241245591002805
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.8970702006423501,
+          "calibrator_intercept": -0.009719429142058216,
+          "inner_oof_log_loss": 0.6236176879792599
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.896085434899131,
+          "calibrator_intercept": -0.01009719426496705,
+          "inner_oof_log_loss": 0.6234082703758999
+        }
+      }
+    },
+    {
+      "outer_fold": 4,
+      "test_game": "114234",
+      "n_train_shots": 1197,
+      "n_test_shots": 125,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.919648147467186,
+          "calibrator_intercept": -0.012506870910143098,
+          "inner_oof_log_loss": 0.6177082111392767
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.9181290416177768,
+          "calibrator_intercept": -0.011796638131788327,
+          "inner_oof_log_loss": 0.6167850377494365
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.9159674567049044,
+          "calibrator_intercept": -0.01190570793765369,
+          "inner_oof_log_loss": 0.6176731627445889
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.9083170832047875,
+          "calibrator_intercept": -0.012366879512415285,
+          "inner_oof_log_loss": 0.61904464184911
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.9151455823451122,
+          "calibrator_intercept": -0.01235810858730548,
+          "inner_oof_log_loss": 0.6183026882132326
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.912733083252779,
+          "calibrator_intercept": -0.012652128986323233,
+          "inner_oof_log_loss": 0.6184787566990202
+        }
+      }
+    },
+    {
+      "outer_fold": 5,
+      "test_game": "114243",
+      "n_train_shots": 1178,
+      "n_test_shots": 144,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.9010337891363567,
+          "calibrator_intercept": -0.010832466793868848,
+          "inner_oof_log_loss": 0.6215414851641087
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.8982876642766016,
+          "calibrator_intercept": -0.01035976427927956,
+          "inner_oof_log_loss": 0.6210922758949272
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.8984276403287619,
+          "calibrator_intercept": -0.009934763378716705,
+          "inner_oof_log_loss": 0.6215994613061949
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.8911168992498529,
+          "calibrator_intercept": -0.010560276317056685,
+          "inner_oof_log_loss": 0.6228194131308895
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.8983083146115513,
+          "calibrator_intercept": -0.01052675777958723,
+          "inner_oof_log_loss": 0.6219819027381411
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.8931466839163614,
+          "calibrator_intercept": -0.010974898654425315,
+          "inner_oof_log_loss": 0.6223663067394181
+        }
+      }
+    },
+    {
+      "outer_fold": 6,
+      "test_game": "178442",
+      "n_train_shots": 1177,
+      "n_test_shots": 145,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.9135137399819173,
+          "calibrator_intercept": -0.011988425643015646,
+          "inner_oof_log_loss": 0.6173339891254012
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.9109548451853584,
+          "calibrator_intercept": -0.01135742595122688,
+          "inner_oof_log_loss": 0.6167667866183506
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.9102340805126257,
+          "calibrator_intercept": -0.011309083006504577,
+          "inner_oof_log_loss": 0.6172046886916924
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.9005608166280122,
+          "calibrator_intercept": -0.011907001040875689,
+          "inner_oof_log_loss": 0.6188751485270432
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.9077481731266778,
+          "calibrator_intercept": -0.01165695906976354,
+          "inner_oof_log_loss": 0.6181187036494623
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.9061579019155604,
+          "calibrator_intercept": -0.01222234174517017,
+          "inner_oof_log_loss": 0.6181941170615542
+        }
+      }
+    },
+    {
+      "outer_fold": 7,
+      "test_game": "179612",
+      "n_train_shots": 1188,
+      "n_test_shots": 134,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.9054129923135802,
+          "calibrator_intercept": -0.011051723890031007,
+          "inner_oof_log_loss": 0.6198179251599034
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.9042545612159294,
+          "calibrator_intercept": -0.01067750070763295,
+          "inner_oof_log_loss": 0.619410722130655
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.9033282259862764,
+          "calibrator_intercept": -0.01039795359641963,
+          "inner_oof_log_loss": 0.6198959253308224
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.8989188556067715,
+          "calibrator_intercept": -0.01117146002470015,
+          "inner_oof_log_loss": 0.6203219623944844
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.9022383545340092,
+          "calibrator_intercept": -0.01111487730018563,
+          "inner_oof_log_loss": 0.6200554577709795
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.9030470720195869,
+          "calibrator_intercept": -0.01105720850103174,
+          "inner_oof_log_loss": 0.6200108524187594
+        }
+      }
+    },
+    {
+      "outer_fold": 8,
+      "test_game": "184439",
+      "n_train_shots": 1192,
+      "n_test_shots": 130,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.9085818343298595,
+          "calibrator_intercept": -0.012336902401904904,
+          "inner_oof_log_loss": 0.6197483432666993
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.9056661929230084,
+          "calibrator_intercept": -0.012257618993437313,
+          "inner_oof_log_loss": 0.619043210873483
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.9054710176786348,
+          "calibrator_intercept": -0.011797604174610624,
+          "inner_oof_log_loss": 0.6195319360835372
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.8969437244625704,
+          "calibrator_intercept": -0.01247845295833384,
+          "inner_oof_log_loss": 0.6208215717966601
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.9043323085593623,
+          "calibrator_intercept": -0.012142188787040922,
+          "inner_oof_log_loss": 0.6201131861615932
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.9021609057796577,
+          "calibrator_intercept": -0.012498279935068498,
+          "inner_oof_log_loss": 0.6203854877639613
+        }
+      }
+    },
+    {
+      "outer_fold": 9,
+      "test_game": "188630",
+      "n_train_shots": 1208,
+      "n_test_shots": 114,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.9097911365755796,
+          "calibrator_intercept": -0.010565468756486448,
+          "inner_oof_log_loss": 0.620418015325749
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.9062972251781114,
+          "calibrator_intercept": -0.010271134561956503,
+          "inner_oof_log_loss": 0.6202495532022243
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.9052803706011859,
+          "calibrator_intercept": -0.01032152067470108,
+          "inner_oof_log_loss": 0.6206814509183665
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.8999804338015801,
+          "calibrator_intercept": -0.010719336826068744,
+          "inner_oof_log_loss": 0.6216991099059119
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.9058358889303968,
+          "calibrator_intercept": -0.010689141117469197,
+          "inner_oof_log_loss": 0.6210286334529951
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.9033525391075424,
+          "calibrator_intercept": -0.010734057378480325,
+          "inner_oof_log_loss": 0.6211000250958073
+        }
+      }
+    },
+    {
+      "outer_fold": 10,
+      "test_game": "191313",
+      "n_train_shots": 1192,
+      "n_test_shots": 130,
+      "models": {
+        "M1_benchmark": {
+          "calibrator_slope": 0.9152208866566582,
+          "calibrator_intercept": -0.010376498875288853,
+          "inner_oof_log_loss": 0.6136744715258344
+        },
+        "M1_plus_speed_rel": {
+          "calibrator_slope": 0.9124482192036691,
+          "calibrator_intercept": -0.010142989716167984,
+          "inner_oof_log_loss": 0.6131165445304381
+        },
+        "M1_plus_speed_early": {
+          "calibrator_slope": 0.9109540492628729,
+          "calibrator_intercept": -0.009945437083991348,
+          "inner_oof_log_loss": 0.6137470324020194
+        },
+        "M1_plus_directional": {
+          "calibrator_slope": 0.9034859155449433,
+          "calibrator_intercept": -0.010492819516695189,
+          "inner_oof_log_loss": 0.615069817049658
+        },
+        "M1_plus_radial_only": {
+          "calibrator_slope": 0.9107072019080739,
+          "calibrator_intercept": -0.010471215859074429,
+          "inner_oof_log_loss": 0.614297659993272
+        },
+        "M1_plus_tangential_only": {
+          "calibrator_slope": 0.9074059967547812,
+          "calibrator_intercept": -0.010884134960573262,
+          "inner_oof_log_loss": 0.6144934304326051
+        }
+      }
+    }
+  ],
+  "detection_sensitivity": {
+    "detected_count": 1207,
+    "extrapolated_count": 115,
+    "detected_metrics": {
+      "M1_benchmark": {
+        "n_samples": 1207,
+        "positive_count": 541,
+        "positive_rate": 0.44821872410936203,
+        "mean_prediction": 0.446495466405467,
+        "log_loss": 0.6174010812516005,
+        "brier_score": 0.21573649742952675,
+        "roc_auc": 0.6920645229332845,
+        "ece": 0.04053212891684908,
+        "ece_5": 0.04053212891684908,
+        "ece_10": 0.04925477297628596,
+        "ece_15": 0.06335370707450177
+      },
+      "M1_plus_speed_rel": {
+        "n_samples": 1207,
+        "positive_count": 541,
+        "positive_rate": 0.44821872410936203,
+        "mean_prediction": 0.44631321764063653,
+        "log_loss": 0.6167678696900557,
+        "brier_score": 0.21542803340848765,
+        "roc_auc": 0.6942071461479964,
+        "ece": 0.03494505170127221,
+        "ece_5": 0.03494505170127221,
+        "ece_10": 0.0404899343065747,
+        "ece_15": 0.05746365212098857
+      },
+      "M1_plus_speed_early": {
+        "n_samples": 1207,
+        "positive_count": 541,
+        "positive_rate": 0.44821872410936203,
+        "mean_prediction": 0.4461762863954966,
+        "log_loss": 0.6174033609791139,
+        "brier_score": 0.21570998198139854,
+        "roc_auc": 0.6926473608543848,
+        "ece": 0.03408489317664889,
+        "ece_5": 0.03408489317664889,
+        "ece_10": 0.04120525031394674,
+        "ece_15": 0.06040526015165517
+      },
+      "M1_plus_directional": {
+        "n_samples": 1207,
+        "positive_count": 541,
+        "positive_rate": 0.44821872410936203,
+        "mean_prediction": 0.44612844662630907,
+        "log_loss": 0.6185157225400636,
+        "brier_score": 0.2162170627068327,
+        "roc_auc": 0.6905602460131111,
+        "ece": 0.03901296289848589,
+        "ece_5": 0.03901296289848589,
+        "ece_10": 0.046561060588751896,
+        "ece_15": 0.06586969027971935
+      },
+      "M1_plus_radial_only": {
+        "n_samples": 1207,
+        "positive_count": 541,
+        "positive_rate": 0.44821872410936203,
+        "mean_prediction": 0.44639096047810944,
+        "log_loss": 0.6179471022159314,
+        "brier_score": 0.21596573069606234,
+        "roc_auc": 0.6910098638379599,
+        "ece": 0.03747589776097859,
+        "ece_5": 0.03747589776097859,
+        "ece_10": 0.04603723893523277,
+        "ece_15": 0.06763891411376818
+      },
+      "M1_plus_tangential_only": {
+        "n_samples": 1207,
+        "positive_count": 541,
+        "positive_rate": 0.44821872410936203,
+        "mean_prediction": 0.4462234175224558,
+        "log_loss": 0.6180245715864591,
+        "brier_score": 0.2160051623211664,
+        "roc_auc": 0.6914761341748403,
+        "ece": 0.04108118457239729,
+        "ece_5": 0.04108118457239729,
+        "ece_10": 0.048372007265305446,
+        "ece_15": 0.06049879284150949
+      }
+    },
+    "extrapolated_metrics": {
+      "M1_benchmark": {
+        "n_samples": 115,
+        "positive_count": 56,
+        "positive_rate": 0.48695652173913045,
+        "mean_prediction": 0.49845711154559497,
+        "log_loss": 0.6158909414324006,
+        "brier_score": 0.2180966807912671,
+        "roc_auc": 0.7097457627118644,
+        "ece": 0.06346544783166964,
+        "ece_5": 0.06346544783166964,
+        "ece_10": 0.08958686006543687,
+        "ece_15": 0.12333618822669122
+      },
+      "M1_plus_speed_rel": {
+        "n_samples": 115,
+        "positive_count": 56,
+        "positive_rate": 0.48695652173913045,
+        "mean_prediction": 0.4978000837593221,
+        "log_loss": 0.6138233561876795,
+        "brier_score": 0.21638570369217688,
+        "roc_auc": 0.7206416464891041,
+        "ece": 0.0965280833762835,
+        "ece_5": 0.0965280833762835,
+        "ece_10": 0.10814357549614059,
+        "ece_15": 0.12768626251525575
+      },
+      "M1_plus_speed_early": {
+        "n_samples": 115,
+        "positive_count": 56,
+        "positive_rate": 0.48695652173913045,
+        "mean_prediction": 0.49895329165766467,
+        "log_loss": 0.6148187797697316,
+        "brier_score": 0.21732024652161078,
+        "roc_auc": 0.7203389830508475,
+        "ece": 0.08180867753697656,
+        "ece_5": 0.08180867753697656,
+        "ece_10": 0.0981725243267195,
+        "ece_15": 0.11541866541563828
+      },
+      "M1_plus_directional": {
+        "n_samples": 115,
+        "positive_count": 56,
+        "positive_rate": 0.48695652173913045,
+        "mean_prediction": 0.49754639259143424,
+        "log_loss": 0.6166095301671879,
+        "brier_score": 0.21835743666005059,
+        "roc_auc": 0.710956416464891,
+        "ece": 0.07339672545534816,
+        "ece_5": 0.07339672545534816,
+        "ece_10": 0.09570792056839056,
+        "ece_15": 0.13343903409298025
+      },
+      "M1_plus_radial_only": {
+        "n_samples": 115,
+        "positive_count": 56,
+        "positive_rate": 0.48695652173913045,
+        "mean_prediction": 0.4973446150362703,
+        "log_loss": 0.61611273810785,
+        "brier_score": 0.2182021657954278,
+        "roc_auc": 0.7139830508474576,
+        "ece": 0.06626230370922817,
+        "ece_5": 0.06626230370922817,
+        "ece_10": 0.10315328091824393,
+        "ece_15": 0.12716661368829962
+      },
+      "M1_plus_tangential_only": {
+        "n_samples": 115,
+        "positive_count": 56,
+        "positive_rate": 0.48695652173913045,
+        "mean_prediction": 0.49857010690180076,
+        "log_loss": 0.6164304659145163,
+        "brier_score": 0.2182531051050902,
+        "roc_auc": 0.711864406779661,
+        "ece": 0.0671621657462166,
+        "ece_5": 0.0671621657462166,
+        "ece_10": 0.08948865504716615,
+        "ece_15": 0.1252016852907024
+      }
+    }
+  }
+}

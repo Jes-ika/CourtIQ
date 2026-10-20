@@ -1,0 +1,9 @@
+# CourtIQ Phase 1 Dependencies
+# Compatible with Python 3.10 - 3.12 on Windows / Linux / macOS
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+scipy==1.14.1
+pytest==8.3.5
+matplotlib==3.9.4
+pyyaml==6.0.3

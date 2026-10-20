@@ -1,0 +1,24 @@
+# CourtIQ License Notice & Placeholder Decision Note
+
+## Project Code Licensing Status
+CourtIQ source code and methodology developed for the AQX Sports Analytics Data Bowl 4.0 are currently reserved under a Proprietary / Evaluation License pending official team release and hackathon submission terms.
+
+**Decision on Code License:**
+A final public open-source license (such as MIT, Apache 2.0, or CC-BY-NC 4.0) has intentionally NOT been selected yet. Before public release, the project team will confirm competition guidelines and partner IP requirements. Until that decision is ratified, all rights are reserved by the CourtIQ team.
+
+---
+
+## Upstream Data Licensing & Attribution Audit
+
+- **Candidate Dataset Source:** SkillCorner Open Data — Basketball
+- **Source Repository:** https://github.com/SkillCorner/opendata-basketball
+- **Upstream License:** MIT License (Copyright (c) 2026 SkillCorner. https://skillcorner.com)
+- **Data-Use Terms:**
+  1. SkillCorner states: "If you use the data, we kindly ask that you credit SkillCorner and notify us on Twitter (@skillcorner) so we can follow the work being done with it."
+  2. The upstream MIT license grants permission to deal in the Software without restriction, subject to including the copyright notice.
+- **Redistribution Policy for CourtIQ:**
+  - Even though the upstream license is MIT, **CourtIQ strictly prohibits redistributing raw source tracking data or dynamic event archives in this repository**.
+  - All source data remains local to user work environments or scratch caches and is excluded via `.gitignore`.
+  - Machine-readable summaries, schema audits, and evaluation metrics derived in Phase 1 comply with fair research use and attribution standards.
+- **Attribution Statement:**
+  "Basketball tracking and dynamic event data provided courtesy of SkillCorner (Spanish Liga ACB 2025-2026 season sample). https://github.com/SkillCorner/opendata-basketball"

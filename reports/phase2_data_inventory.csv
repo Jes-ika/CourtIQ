@@ -1,0 +1,35 @@
+field_name,source_file,data_type,units,meaning,temporal_availability,missingness_pct,intended_use
+gameId,{gameId}_game_data.json,integer,dimensionless,Unique SkillCorner match identifier,pre-match,0.0,Group identifier for LOGO cross-validation
+date,{gameId}_game_data.json,string,ISO-8601 UTC,Match date and scheduled tip-off time,pre-match,0.0,Chronological ordering and match metadata
+homeTeam,{gameId}_game_data.json,object,dimensionless,Home team identity and roster list,pre-match,0.0,Team affiliation and player metadata linking
+awayTeam,{gameId}_game_data.json,object,dimensionless,Away team identity and roster list,pre-match,0.0,Team affiliation and player metadata linking
+id,{gameId}_dynamic_events.json [shots],string,dimensionless,Unique shot event primary key,event-level,0.0,Unique observation key
+gameId,{gameId}_dynamic_events.json [shots],integer,dimensionless,SkillCorner match identifier,event-level,0.0,CV grouping variable
+period,{gameId}_dynamic_events.json [shots],integer,quarter/OT index (1-5),Period of the game,event-level,0.0,Temporal alignment with tracking frames
+startFrame,{gameId}_dynamic_events.json [shots],integer,frame index (25 fps),Frame at shot release from video start,release-time,0.0,Anchor frame for temporal tracking alignment
+startWallClock,{gameId}_dynamic_events.json [shots],integer,milliseconds,Elapsed video wall clock at shot release,release-time,0.0,Secondary timestamp verification
+startGameClock,{gameId}_dynamic_events.json [shots],float,seconds,Game clock remaining in period at release,release-time,0.0,Game state context
+endFrame,{gameId}_dynamic_events.json [shots],integer,frame index (25 fps),Frame at shot termination (basket/rebound),post-shot,0.0,Excluded from model inputs (leakage risk)
+location,{gameId}_dynamic_events.json [shots],list[float],"feet [x, y]",Shooter court coordinates at release,release-time,1.78,Spatial shot coordinates (M0 baseline feature)
+distance,{gameId}_dynamic_events.json [shots],float,feet,Shooter distance to offensive hoop at release,release-time,1.78,Shot distance (M0 baseline feature)
+shotType,{gameId}_dynamic_events.json [shots],string,categorical,"Basic shot type (jumper, layup, floater, post, heave)",release-time,1.78,Shot mechanics (M0 baseline feature)
+three,{gameId}_dynamic_events.json [shots],boolean,indicator (0/1),True if 3-point field goal attempt,release-time,0.0,Shot value category (M0 baseline feature)
+shotClock,{gameId}_dynamic_events.json [shots],float,seconds,Seconds remaining on shot clock at release,release-time,0.48,Possession urgency context
+outcome,{gameId}_dynamic_events.json [shots],boolean,binary (0/1),"Field goal outcome (True=Made, False=Missed)",post-shot,0.0,Primary supervised learning target label
+fouled,{gameId}_dynamic_events.json [shots],boolean,binary (0/1),True if shooter was fouled during attempt,post-shot,0.0,Filtering criterion (exclude fouled misses per FIBA rules)
+closestDefDist,{gameId}_dynamic_events.json [shots],float,feet,Euclidean distance to closest defender at release,release-time,1.78,Defensive pressure (M1 core feature)
+contestLevel,{gameId}_dynamic_events.json [shots],string,categorical,"Level of contest (open, light, average, plus, blocked)",release-time,1.78,Defensive contest category (M1 core feature)
+closestDefId,{gameId}_dynamic_events.json [shots],integer,dimensionless,SkillCorner player ID of closest defender,release-time,1.78,Entity linking for pre-release tracking lookup
+shooterId,{gameId}_dynamic_events.json [shots],integer,dimensionless,SkillCorner player ID of the shooter,release-time,0.0,Entity linking for pre-release tracking lookup
+shotQuality,{gameId}_dynamic_events.json [shots],float,percentage (0-100),Proprietary SkillCorner expected shot quality,post-hoc model,1.78,Excluded from inputs (external model output leakage)
+offPlayerIds,{gameId}_dynamic_events.json [possessions],list[integer],dimensionless,Player IDs of 5 offensive players on court,possession-span,0.0,Teammate identity resolution
+defPlayerIds,{gameId}_dynamic_events.json [possessions],list[integer],dimensionless,Player IDs of 5 defensive players on court,possession-span,0.0,Opponent identity resolution
+passes,{gameId}_dynamic_events.json [passes],list[object],event records,Completed and intercepted pass events,event-level,0.0,Passing lane analysis (observes actual passes only)
+drives,{gameId}_dynamic_events.json [drives],list[object],event records,Penetration drives toward basket,event-level,0.0,Drive analysis (observes actual drives only)
+frameIdx,{gameId}_tracking_data.jsonl.gz,integer,frame index (25 fps),Frame counter from video start,frame-level,0.0,Temporal alignment index
+wallClock,{gameId}_tracking_data.jsonl.gz,integer,milliseconds,Elapsed wall clock time,frame-level,0.0,Continuous time synchronization
+homePlayers,{gameId}_tracking_data.jsonl.gz,list[object],player tracking dicts,"xyz coordinates, speed, jersey, playerId, isDetected",frame-level,43.67,Player motion & spatial vectors (empty during dead time)
+awayPlayers,{gameId}_tracking_data.jsonl.gz,list[object],player tracking dicts,"xyz coordinates, speed, jersey, playerId, isDetected",frame-level,43.67,Player motion & spatial vectors (empty during dead time)
+ball,{gameId}_tracking_data.jsonl.gz,object,ball tracking dict,"xyz coordinates, speed, isDetected, predError",frame-level,43.67,Ball trajectory tracking (empty during dead time)
+attempts,acb_shotsaggregates_20252026.csv,integer,boxscore FGA count,Season-total FGA across 293 games,full-season aggregate,0.0,Blacklisted (target leakage risk)
+fg_pct,acb_shotsaggregates_20252026.csv,float,percentage,Season-total FG% across 293 games,full-season aggregate,0.0,Blacklisted (target leakage risk)

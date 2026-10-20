@@ -1,0 +1,449 @@
+{
+  "status": "success",
+  "file_inventory": {
+    "root_directory": "C:\\Users\\jesik\\.gemini\\antigravity-ide\\brain\\6e657e94-5888-4246-919f-b9658277d018\\scratch\\opendata-basketball\\data",
+    "total_match_directories": 10,
+    "matches": [
+      {
+        "game_id": "114086",
+        "has_dynamic_events": true,
+        "shot_count": 139,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 133,
+        "tracking_is_lfs_pointer": true
+      },
+      {
+        "game_id": "114099",
+        "has_dynamic_events": true,
+        "shot_count": 150,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 133,
+        "tracking_is_lfs_pointer": true
+      },
+      {
+        "game_id": "114169",
+        "has_dynamic_events": true,
+        "shot_count": 148,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 133,
+        "tracking_is_lfs_pointer": true
+      },
+      {
+        "game_id": "114234",
+        "has_dynamic_events": true,
+        "shot_count": 144,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 133,
+        "tracking_is_lfs_pointer": true
+      },
+      {
+        "game_id": "114243",
+        "has_dynamic_events": true,
+        "shot_count": 159,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 33707974,
+        "tracking_is_lfs_pointer": false
+      },
+      {
+        "game_id": "178442",
+        "has_dynamic_events": true,
+        "shot_count": 158,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 133,
+        "tracking_is_lfs_pointer": true
+      },
+      {
+        "game_id": "179612",
+        "has_dynamic_events": true,
+        "shot_count": 145,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 133,
+        "tracking_is_lfs_pointer": true
+      },
+      {
+        "game_id": "184439",
+        "has_dynamic_events": true,
+        "shot_count": 142,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 133,
+        "tracking_is_lfs_pointer": true
+      },
+      {
+        "game_id": "188630",
+        "has_dynamic_events": true,
+        "shot_count": 133,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 133,
+        "tracking_is_lfs_pointer": true
+      },
+      {
+        "game_id": "191313",
+        "has_dynamic_events": true,
+        "shot_count": 141,
+        "has_game_data": true,
+        "tracking_file_size_bytes": 133,
+        "tracking_is_lfs_pointer": true
+      }
+    ],
+    "aggregates": [
+      {
+        "filename": "acb_drivesaggregates_20252026.csv",
+        "size_bytes": 162374
+      },
+      {
+        "filename": "acb_picksaggregates_20252026.csv",
+        "size_bytes": 840190
+      },
+      {
+        "filename": "acb_shotsaggregates_20252026.csv",
+        "size_bytes": 601645
+      }
+    ],
+    "summary": {
+      "event_files_found": 10,
+      "meta_files_found": 10,
+      "tracking_files_found": 10,
+      "tracking_lfs_pointers": 9,
+      "tracking_downloaded_payloads": 1
+    }
+  },
+  "row_counts": {
+    "total_shots": 1459,
+    "total_games": 10,
+    "game_distribution": {
+      "114086": 139,
+      "114099": 150,
+      "114169": 148,
+      "114234": 144,
+      "114243": 159,
+      "178442": 158,
+      "179612": 145,
+      "184439": 142,
+      "188630": 133,
+      "191313": 141
+    }
+  },
+  "key_uniqueness": {
+    "primary_key": "id",
+    "is_unique": true,
+    "duplicate_count": 0
+  },
+  "join_coverage": {
+    "games_with_rosters": 10,
+    "total_shots_evaluated": 1459,
+    "shooter_id_join_rate": 1.0,
+    "closest_def_id_join_rate": 0.9822
+  },
+  "column_inventory": {
+    "id": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "gameId": {
+      "dtype": "int64",
+      "inferred_python_type": "int64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "season": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "period": {
+      "dtype": "int64",
+      "inferred_python_type": "int64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "chanceId": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "possessionId": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "startFrame": {
+      "dtype": "int64",
+      "inferred_python_type": "int64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "startWallClock": {
+      "dtype": "int64",
+      "inferred_python_type": "int64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "startGameClock": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "endFrame": {
+      "dtype": "int64",
+      "inferred_python_type": "int64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "endWallClock": {
+      "dtype": "int64",
+      "inferred_python_type": "int64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "endGameClock": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "location": {
+      "dtype": "object",
+      "inferred_python_type": "list",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "region": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "shotClock": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1452,
+      "null_count": 7,
+      "null_percentage": 0.48
+    },
+    "shooterId": {
+      "dtype": "int64",
+      "inferred_python_type": "int64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "offTeamId": {
+      "dtype": "int64",
+      "inferred_python_type": "int64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "defTeamId": {
+      "dtype": "int64",
+      "inferred_python_type": "int64",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "three": {
+      "dtype": "bool",
+      "inferred_python_type": "bool_",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "outcome": {
+      "dtype": "bool",
+      "inferred_python_type": "bool_",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "fouled": {
+      "dtype": "bool",
+      "inferred_python_type": "bool_",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "foulId": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 143,
+      "null_count": 1316,
+      "null_percentage": 90.2
+    },
+    "assisted": {
+      "dtype": "bool",
+      "inferred_python_type": "bool_",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "assistOpp": {
+      "dtype": "bool",
+      "inferred_python_type": "bool_",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "passerId": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1280,
+      "null_count": 179,
+      "null_percentage": 12.27
+    },
+    "blocked": {
+      "dtype": "bool",
+      "inferred_python_type": "bool_",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "blockerId": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 51,
+      "null_count": 1408,
+      "null_percentage": 96.5
+    },
+    "distance": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "dribblesBefore": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1378,
+      "null_count": 81,
+      "null_percentage": 5.55
+    },
+    "shotType": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "complexShotType": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "catchAndShoot": {
+      "dtype": "object",
+      "inferred_python_type": "bool",
+      "non_null_count": 1384,
+      "null_count": 75,
+      "null_percentage": 5.14
+    },
+    "shotQuality": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "createdFromPaint": {
+      "dtype": "bool",
+      "inferred_python_type": "bool_",
+      "non_null_count": 1459,
+      "null_count": 0,
+      "null_percentage": 0.0
+    },
+    "contested": {
+      "dtype": "object",
+      "inferred_python_type": "bool",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "contestLevel": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "releaseTime": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1377,
+      "null_count": 82,
+      "null_percentage": 5.62
+    },
+    "closestDefDist": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "closestDefId": {
+      "dtype": "float64",
+      "inferred_python_type": "float64",
+      "non_null_count": 1433,
+      "null_count": 26,
+      "null_percentage": 1.78
+    },
+    "touchId": {
+      "dtype": "object",
+      "inferred_python_type": "str",
+      "non_null_count": 1378,
+      "null_count": 81,
+      "null_percentage": 5.55
+    }
+  },
+  "distributions": {
+    "outcome": {
+      "False": 853,
+      "True": 606
+    },
+    "fouled": {
+      "False": 1316,
+      "True": 143
+    },
+    "three_point": {
+      "False": 924,
+      "True": 535
+    },
+    "contest_level": {
+      "plus": 593,
+      "average": 395,
+      "open": 301,
+      "light": 93,
+      "blocked": 51,
+      "None": 26
+    },
+    "fouled_misses_count": 111,
+    "unlocated_shots_count": 26
+  },
+  "warnings": [
+    "9 of 10 tracking files are Git LFS pointers (not downloaded). Run 'git lfs pull' if raw frame-by-frame player trajectories are required.",
+    "26 shot attempts have missing distance/spatial coordinates (untracked/off-screen).",
+    "111 shots are fouled misses. In FIBA official box-score rules, these award free throws and are excluded from FGA. The CourtIQ pipeline supports excluding them to reflect box-score FGA.",
+    "Dataset contains 10 games (1459 shots). Sample size is limited; game-grouped cross-validation uncertainty intervals must be reported."
+  ]
+}

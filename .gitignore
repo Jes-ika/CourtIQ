@@ -1,0 +1,47 @@
+# CourtIQ .gitignore
+# Strictly prevent accidental commit of raw data, tokens, or virtual environments
+
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Testing & profiling
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data & downloads (NEVER commit raw data or downloaded archives)
+data/
+scratch/
+*.jsonl.gz
+*.gz
+*.tar
+*.zip
+*.parquet
+
+# Machine readable large data in root or temp directories
+*.csv
+!tests/fixtures/*.csv
+!reports/*.csv
+!reports/**/*.csv
+*.json
+!tests/fixtures/*.json
+!configs/*.json
+!reports/*.json
+!reports/**/*.json
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

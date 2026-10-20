@@ -1,0 +1,144 @@
+{
+  "reproduction_status": "exact_match_verified",
+  "evaluation_protocol": "LeaveOneGroupOut (10 folds)",
+  "dataset_accounting": {
+    "total_raw_shots": 1459,
+    "unlocated_missing_coords_excluded": 26,
+    "fouled_misses_excluded": 111,
+    "total_excluded": 137,
+    "valid_fga_evaluated": 1322,
+    "independent_games": 10
+  },
+  "pooled_metrics": {
+    "m0": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.4501593433604186,
+      "log_loss": 0.655161047019607,
+      "brier_score": 0.23145647897494484,
+      "roc_auc": 0.6410258187489171,
+      "ece": 0.020005691520374163
+    },
+    "m1": {
+      "n_samples": 1322,
+      "positive_count": 597,
+      "positive_rate": 0.451588502269289,
+      "mean_prediction": 0.4510155792580501,
+      "log_loss": 0.6172697150797337,
+      "brier_score": 0.21594180838762073,
+      "roc_auc": 0.6941003869924336,
+      "ece": 0.04252708479824424
+    },
+    "deltas": {
+      "delta_log_loss": -0.03789133193987326,
+      "delta_brier": -0.015514670587324114,
+      "delta_roc_auc": 0.05307456824351653
+    }
+  },
+  "macro_game_averages": {
+    "m0_log_loss_mean": 0.6557524633428865,
+    "m0_log_loss_std": 0.02287180308951018,
+    "m1_log_loss_mean": 0.6178200683835803,
+    "m1_log_loss_std": 0.026128246170692804,
+    "delta_log_loss_mean": -0.03793239495930628,
+    "delta_log_loss_se": 0.006801532168411646,
+    "m0_brier_mean": 0.23172080472247422,
+    "m1_brier_mean": 0.21621065697687886,
+    "delta_brier_mean": -0.015510147745595365,
+    "delta_brier_se": 0.002857102136994039,
+    "m0_auc_mean": 0.6440916431322622,
+    "m1_auc_mean": 0.6975394666246514,
+    "delta_auc_mean": 0.053447823492389114,
+    "delta_auc_se": 0.010116441153218024
+  },
+  "game_level_win_loss": {
+    "m1_improved_log_loss_games": 9,
+    "m1_worsened_log_loss_games": 1,
+    "m1_improved_brier_games": 9,
+    "m1_worsened_brier_games": 1,
+    "m1_improved_auc_games": 9,
+    "m1_worsened_auc_games": 1
+  },
+  "non_parametric_inference": {
+    "wilcoxon_signed_rank_pvalues": {
+      "delta_log_loss": 0.00390625,
+      "delta_brier": 0.00390625,
+      "delta_roc_auc": 0.00390625
+    },
+    "cluster_bootstrap_95_ci_2000_resamples": {
+      "delta_log_loss": [
+        -0.047130952599045275,
+        -0.02871395783417652
+      ],
+      "delta_brier": [
+        -0.01939676312325732,
+        -0.011547360955835409
+      ],
+      "delta_roc_auc": [
+        0.040014007182658906,
+        0.06670180233656048
+      ]
+    }
+  },
+  "calibration_tables_5_bins": {
+    "m0": [
+      {
+        "m0_bin": "(-0.001, 0.2]",
+        "count": 14,
+        "mean_pred": 0.09761285714285714,
+        "actual_rate": 0.14285714285714285
+      },
+      {
+        "m0_bin": "(0.2, 0.4]",
+        "count": 629,
+        "mean_pred": 0.32569952305246425,
+        "actual_rate": 0.3481717011128776
+      },
+      {
+        "m0_bin": "(0.4, 0.6]",
+        "count": 400,
+        "mean_pred": 0.511323325,
+        "actual_rate": 0.4925
+      },
+      {
+        "m0_bin": "(0.6, 0.8]",
+        "count": 279,
+        "mean_pred": 0.6607523297491039,
+        "actual_rate": 0.6415770609318996
+      }
+    ],
+    "m1": [
+      {
+        "m1_bin": "(-0.001, 0.2]",
+        "count": 86,
+        "mean_pred": 0.09307337209302326,
+        "actual_rate": 0.11627906976744186
+      },
+      {
+        "m1_bin": "(0.2, 0.4]",
+        "count": 521,
+        "mean_pred": 0.31360080614203456,
+        "actual_rate": 0.35892514395393477
+      },
+      {
+        "m1_bin": "(0.4, 0.6]",
+        "count": 386,
+        "mean_pred": 0.49625943005181344,
+        "actual_rate": 0.43523316062176165
+      },
+      {
+        "m1_bin": "(0.6, 0.8]",
+        "count": 296,
+        "mean_pred": 0.6965388851351352,
+        "actual_rate": 0.6824324324324325
+      },
+      {
+        "m1_bin": "(0.8, 1.0]",
+        "count": 33,
+        "mean_pred": 0.8218333333333333,
+        "actual_rate": 0.9090909090909091
+      }
+    ]
+  }
+}

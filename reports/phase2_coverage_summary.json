@@ -1,0 +1,208 @@
+{
+  "total_games_audited": 10,
+  "total_tracking_frames_all_games": 1472932,
+  "total_live_frames_all_games": 829704,
+  "total_dead_frames_all_games": 643228,
+  "total_evaluated_shots": 1322,
+  "game_level_audit": [
+    {
+      "gameId": 114086,
+      "total_tracking_frames": 124796,
+      "live_frames": 92188,
+      "dead_frames": 32608,
+      "live_fraction": 0.7387095740248085,
+      "periods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluated_shots": 122
+    },
+    {
+      "gameId": 114099,
+      "total_tracking_frames": 147892,
+      "live_frames": 75655,
+      "dead_frames": 72237,
+      "live_fraction": 0.5115557298569227,
+      "periods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluated_shots": 140
+    },
+    {
+      "gameId": 114169,
+      "total_tracking_frames": 172257,
+      "live_frames": 106176,
+      "dead_frames": 66081,
+      "live_fraction": 0.6163813371880388,
+      "periods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluated_shots": 138
+    },
+    {
+      "gameId": 114234,
+      "total_tracking_frames": 158923,
+      "live_frames": 72132,
+      "dead_frames": 86791,
+      "live_fraction": 0.4538801809681418,
+      "periods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluated_shots": 125
+    },
+    {
+      "gameId": 114243,
+      "total_tracking_frames": 146870,
+      "live_frames": 77023,
+      "dead_frames": 69847,
+      "live_fraction": 0.5244297678218833,
+      "periods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluated_shots": 144
+    },
+    {
+      "gameId": 178442,
+      "total_tracking_frames": 162479,
+      "live_frames": 89642,
+      "dead_frames": 72837,
+      "live_fraction": 0.551714375396205,
+      "periods": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "evaluated_shots": 145
+    },
+    {
+      "gameId": 179612,
+      "total_tracking_frames": 140856,
+      "live_frames": 83437,
+      "dead_frames": 57419,
+      "live_fraction": 0.59235673311751,
+      "periods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluated_shots": 134
+    },
+    {
+      "gameId": 184439,
+      "total_tracking_frames": 154021,
+      "live_frames": 77428,
+      "dead_frames": 76593,
+      "live_fraction": 0.502710669324313,
+      "periods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluated_shots": 130
+    },
+    {
+      "gameId": 188630,
+      "total_tracking_frames": 121793,
+      "live_frames": 73138,
+      "dead_frames": 48655,
+      "live_fraction": 0.6005107025855345,
+      "periods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluated_shots": 114
+    },
+    {
+      "gameId": 191313,
+      "total_tracking_frames": 143045,
+      "live_frames": 82885,
+      "dead_frames": 60160,
+      "live_fraction": 0.5794330455451082,
+      "periods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "evaluated_shots": 130
+    }
+  ],
+  "lookback_window_coverage": {
+    "release": {
+      "lookback_frames": 0,
+      "lookback_ms": 0,
+      "has_frame_count": 1322,
+      "has_frame_pct": 1.0,
+      "shooter_and_defender_tracked_count": 1322,
+      "shooter_and_defender_tracked_pct": 1.0,
+      "shooter_and_defender_detected_count": 1172,
+      "shooter_and_defender_detected_pct": 0.886535552193646,
+      "all_ten_players_tracked_count": 1322,
+      "all_ten_players_tracked_pct": 1.0
+    },
+    "200ms": {
+      "lookback_frames": 5,
+      "lookback_ms": 200,
+      "has_frame_count": 1322,
+      "has_frame_pct": 1.0,
+      "shooter_and_defender_tracked_count": 1322,
+      "shooter_and_defender_tracked_pct": 1.0,
+      "shooter_and_defender_detected_count": 1191,
+      "shooter_and_defender_detected_pct": 0.9009077155824509,
+      "all_ten_players_tracked_count": 1322,
+      "all_ten_players_tracked_pct": 1.0
+    },
+    "400ms": {
+      "lookback_frames": 10,
+      "lookback_ms": 400,
+      "has_frame_count": 1322,
+      "has_frame_pct": 1.0,
+      "shooter_and_defender_tracked_count": 1322,
+      "shooter_and_defender_tracked_pct": 1.0,
+      "shooter_and_defender_detected_count": 1207,
+      "shooter_and_defender_detected_pct": 0.9130105900151286,
+      "all_ten_players_tracked_count": 1322,
+      "all_ten_players_tracked_pct": 1.0
+    },
+    "800ms": {
+      "lookback_frames": 20,
+      "lookback_ms": 800,
+      "has_frame_count": 1322,
+      "has_frame_pct": 1.0,
+      "shooter_and_defender_tracked_count": 1318,
+      "shooter_and_defender_tracked_pct": 0.9969742813918305,
+      "shooter_and_defender_detected_count": 1222,
+      "shooter_and_defender_detected_pct": 0.924357034795764,
+      "all_ten_players_tracked_count": 1319,
+      "all_ten_players_tracked_pct": 0.9977307110438729
+    }
+  },
+  "joint_window_coverage": {
+    "release_and_200ms_tracked_count": 1322,
+    "release_and_200ms_tracked_pct": 1.0,
+    "release_and_400ms_tracked_count": 1322,
+    "release_and_400ms_tracked_pct": 1.0,
+    "release_and_800ms_tracked_count": 1318,
+    "release_and_800ms_tracked_pct": 0.9969742813918305
+  }
+}
