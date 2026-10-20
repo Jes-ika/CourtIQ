@@ -91,7 +91,7 @@ All models evaluated on matched **1,322 eligible shot attempts** across **10 out
 
 | Model Specification | Raw Features | Design Columns ($d$)* | Outer Log Loss | $\Delta$ Log Loss vs M1 | 95% Cluster Bootstrap CI | Brier Score | ROC-AUC | 10-bin ECE | Win Rate (vs M1) | Status |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **M0 Baseline (Spatial/Mechanics)** | 9 | 21 | 0.655210 | +0.037940 | — | 0.231510 | 0.641020 | 0.058210 | — | Deprecated |
+| **M0 Baseline (Spatial/Mechanics)** | 9 | 21 | 0.655161 | +0.037891 | — | 0.231456 | 0.641026 | 0.030552 | — | Deprecated |
 | **M1 Benchmark (Frozen)** | 12 | 29 | **0.617270** | — | — | **0.215942** | **0.694100** | 0.051075 | — | **Official Benchmark** |
 | **M1 + Speed Rel ($[t-0.4\text{s}, t]$)** | 13 | 30 | **0.616512** | **-0.000758** | **[-0.002177, +0.000854]** | **0.215511** | **0.696695** | **0.044691** | **7 / 10 Games** | **Exploratory Hypothesis** |
 | **M1 + Speed Early ($[t-0.8\text{s}, t-0.4\text{s}]$)**| 13 | 30 | 0.617179 | -0.000091 | [-0.001136, +0.000901] | 0.215850 | 0.694897 | 0.044617 | 5 / 10 Games | Signal Decayed |

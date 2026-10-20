@@ -138,7 +138,7 @@ Post-hoc calibration is performed via a double-nested cross-fitting scheme:
 ### Table 2: Comprehensive Model Comparison (Matched N=1,322 Shots, 10 Outer Folds)
 
 | Model Specification | Raw Features | Encoded Columns ($d$)* | Outer Log Loss | $\Delta$ Log Loss vs M1 | 95% Cluster Bootstrap CI | Brier Score | ROC-AUC | 10-bin ECE | Game Wins (vs M1) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **M1 Benchmark (Frozen)** | 12 | 29 | **0.617270** | — | — | **0.215942** | **0.694100** | 0.051075 | — |
 | **M1 + Speed Rel ($[t-0.4\text{s}, t]$)** | 13 | 30 | **0.616512** | **-0.000758** | **[-0.002177, +0.000854]** | **0.215511** | **0.696695** | **0.044691** | **7 / 10** |
 | **M1 + Speed Early ($[t-0.8\text{s}, t-0.4\text{s}]$)**| 13 | 30 | **0.617179** | **-0.000091** | **[-0.001136, +0.000901]** | 0.215850 | 0.694897 | 0.044617 | 5 / 10 |
